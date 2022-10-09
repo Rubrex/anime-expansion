@@ -1,9 +1,13 @@
 import React from "react";
+import { useLoaderData } from "react-router-dom";
+import CardsContainer from "./CardsContainer";
 
 const TopCharacters = () => {
+  const topCharacters = useLoaderData().data;
+  console.log(topCharacters);
   return (
     <div>
-      <h2>Top Characters</h2>
+      <CardsContainer top={topCharacters}></CardsContainer>
     </div>
   );
 };
