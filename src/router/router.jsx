@@ -12,7 +12,7 @@ export const router = createBrowserRouter([
   {
     path: "/",
     element: <Markup></Markup>,
-    // errorElement: <ErrorPage></ErrorPage>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       { path: "/", element: <Home></Home> },
       {
@@ -25,7 +25,7 @@ export const router = createBrowserRouter([
         element: <TopManga></TopManga>,
         loader: async () => fetch("https://api.jikan.moe/v4/top/manga"),
       },
-      { path: "/topReviews", element: <TopReviews></TopReviews> },
+      { path: "/topReviewssssss", element: <TopReviews></TopReviews> },
       {
         path: "/topCharacters",
         element: <TopCharacters></TopCharacters>,
