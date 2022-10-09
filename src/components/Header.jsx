@@ -25,7 +25,7 @@ const Header = () => {
                 to="/topAnime"
                 aria-label="Top Anime"
                 title="Top Anime"
-                className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-primaryColor"
+                className={`font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-primaryColor`}
               >
                 Top Anime
               </NavLink>

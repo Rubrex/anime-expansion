@@ -4,7 +4,7 @@ import CardsContainer from "./CardsContainer";
 
 const TopCharacters = () => {
   const topCharacters = useLoaderData().data;
-  console.log(topCharacters);
+  // console.log(topCharacters);
   return (
     <div>
       <CardsContainer top={topCharacters}></CardsContainer>
