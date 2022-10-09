@@ -3,5 +3,26 @@
 @tailwind utilities;
 
 body {
-  background-color: rgb(242, 242, 242);
+  background-color: #f2f2f2;
+}
+
+.custom-shape-divider-bottom-1665287073 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg) translateY(-25px);
+}
+
+.custom-shape-divider-bottom-1665287073 svg {
+  position: relative;
+  display: block;
+  width: calc(150% + 1.3px);
+  height: 33px;
+}
+
+.custom-shape-divider-bottom-1665287073 .shape-fill {
+  fill: #f2f2f2;
 }
