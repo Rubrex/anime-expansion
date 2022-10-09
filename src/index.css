@@ -15,7 +15,7 @@ body {
   line-height: 0;
   transform: rotate(180deg) translateY(-25px);
 }
-
+/* Wave design for header */
 .custom-shape-divider-bottom-1665287073 svg {
   position: relative;
   display: block;
@@ -24,5 +24,26 @@ body {
 }
 
 .custom-shape-divider-bottom-1665287073 .shape-fill {
+  fill: #f2f2f2;
+}
+/* Tilt design for footer */
+.custom-shape-divider-top-1665293338 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg) translateY(38px);
+}
+
+.custom-shape-divider-top-1665293338 svg {
+  position: relative;
+  display: block;
+  width: calc(106% + 1.3px);
+  height: 38px;
+}
+
+.custom-shape-divider-top-1665293338 .shape-fill {
   fill: #f2f2f2;
 }
