@@ -24,7 +24,7 @@ const Header = () => {
               to="/topAnime"
               aria-label="Top Anime"
               title="Top Anime"
-              className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+              className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-primaryColor"
             >
               Top Anime
             </NavLink>
@@ -34,7 +34,7 @@ const Header = () => {
               to="/topManga"
               aria-label="Top Manga"
               title="Top Manga"
-              className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+              className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-primaryColor"
             >
               Top Manga
             </NavLink>
@@ -44,7 +44,7 @@ const Header = () => {
               to="/topReviews"
               aria-label="Top Reviews"
               title="Top Reviews"
-              className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+              className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-primaryColor"
             >
               Top Reviews
             </NavLink>
@@ -54,7 +54,7 @@ const Header = () => {
               to="/topCharacters"
               aria-label="Top Characters"
               title="Top Characters"
-              className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+              className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-primaryColor"
             >
               Characters
             </NavLink>
@@ -62,7 +62,7 @@ const Header = () => {
           <li>
             <NavLink
               to="/aboutUs"
-              className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+              className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-red-400 hover:bg-red-700 focus:shadow-outline focus:outline-none"
               aria-label="About Us"
               title="About Us"
             >
@@ -103,23 +103,9 @@ const Header = () => {
                       title="Company"
                       className="inline-flex items-center"
                     >
-                      <svg
-                        className="w-8 text-deep-purple-accent-400"
-                        viewBox="0 0 24 24"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeMiterlimit="10"
-                        stroke="currentColor"
-                        fill="none"
-                      >
-                        <rect x="3" y="1" width="7" height="12" />
-                        <rect x="3" y="17" width="7" height="6" />
-                        <rect x="14" y="1" width="7" height="6" />
-                        <rect x="14" y="11" width="7" height="12" />
-                      </svg>
+                      <img src={logo} alt="" width={100} />
                       <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
-                        Company
+                        Expansion
                       </span>
                     </a>
                   </div>
@@ -146,7 +132,7 @@ const Header = () => {
                         href="/"
                         aria-label="Our product"
                         title="Our product"
-                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-primaryColor"
                       >
                         Product
                       </a>
@@ -156,7 +142,7 @@ const Header = () => {
                         href="/"
                         aria-label="Our product"
                         title="Our product"
-                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-primaryColor"
                       >
                         Features
                       </a>
@@ -166,7 +152,7 @@ const Header = () => {
                         href="/"
                         aria-label="Product pricing"
                         title="Product pricing"
-                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-primaryColor"
                       >
                         Pricing
                       </a>
@@ -176,7 +162,7 @@ const Header = () => {
                         href="/"
                         aria-label="About us"
                         title="About us"
-                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-primaryColor"
                       >
                         About us
                       </a>

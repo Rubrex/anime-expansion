@@ -9,6 +9,7 @@ module.exports = {
         sans: ["Montserrat", ...defaultTheme.fontFamily.sans],
       },
       colors: {
+        primaryColor: "rgb(211, 0, 0)",
         red: {
           50: "#ffebee",
           100: "#ffcdd2",
