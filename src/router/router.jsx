@@ -34,6 +34,14 @@ export const router = createBrowserRouter([
         path: "/topManga",
         element: <TopManga></TopManga>,
         loader: async () => fetch("https://api.jikan.moe/v4/top/manga"),
+        children: [
+          {
+            path: ":id",
+            element: <CardDetails />,
+            loader: async ({ params }) =>
+              fetch(`https://api.jikan.moe/v4/manga/${params.id}`),
+          },
+        ],
       },
       { path: "/topReviewssssss", element: <TopReviews></TopReviews> },
       {

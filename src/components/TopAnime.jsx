@@ -1,6 +1,5 @@
 import React from "react";
-import { Outlet, useLoaderData } from "react-router-dom";
-import CardDetails from "./CardDetails";
+import { useLoaderData } from "react-router-dom";
 import { CardsContainer } from "./CardsContainer";
 
 const TopAnime = () => {
