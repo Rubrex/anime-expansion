@@ -3,7 +3,7 @@ import errorImage from "../assets/nani.jpg";
 const ErrorPage = () => {
   return (
     <div
-      className="flex justify-center items-center h-screen flex-col"
+      className="flex justify-center items-center h-screen flex-col px-10"
       style={{ backgroundColor: "rgb(248, 248, 248)" }}
     >
       <img src={errorImage} alt="" width={400} />

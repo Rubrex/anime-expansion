@@ -98,7 +98,7 @@ const Header = () => {
                 <div className="p-5 bg-white border rounded shadow-sm">
                   <div className="flex items-center justify-between mb-4">
                     <div>
-                      <a
+                      <Link
                         href="/"
                         aria-label="Company"
                         title="Company"
@@ -108,7 +108,7 @@ const Header = () => {
                         <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
                           Expansion
                         </span>
-                      </a>
+                      </Link>
                     </div>
                     <div>
                       <button
@@ -129,54 +129,54 @@ const Header = () => {
                   <nav className="z-50">
                     <ul className="space-y-4">
                       <li>
-                        <a
-                          href="/"
+                        <Link
+                          to="/topAnime"
                           aria-label="Our product"
                           title="Our product"
                           className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-primaryColor"
                         >
-                          Product
-                        </a>
+                          Top Anime
+                        </Link>
                       </li>
                       <li>
-                        <a
-                          href="/"
-                          aria-label="Our product"
-                          title="Our product"
+                        <Link
+                          to="/topManga"
+                          aria-label="Top Manga"
+                          title="Top Manga"
                           className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-primaryColor"
                         >
-                          Features
-                        </a>
+                          Top Manga
+                        </Link>
                       </li>
                       <li>
-                        <a
-                          href="/"
-                          aria-label="Product pricing"
-                          title="Product pricing"
+                        <Link
+                          to="/topCharacters"
+                          aria-label="Top Characters"
+                          title="Top Characters"
                           className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-primaryColor"
                         >
-                          Pricing
-                        </a>
+                          Top Characters
+                        </Link>
                       </li>
                       <li>
-                        <a
-                          href="/"
-                          aria-label="About us"
-                          title="About us"
+                        <Link
+                          to="/topReviews"
+                          aria-label="Top reviews"
+                          title="Top reviews"
                           className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-primaryColor"
                         >
-                          About us
-                        </a>
+                          Top Reviews
+                        </Link>
                       </li>
                       <li>
-                        <a
+                        <Link
                           href="/"
                           className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
                           aria-label="Sign up"
                           title="Sign up"
                         >
                           Sign up
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </nav>
