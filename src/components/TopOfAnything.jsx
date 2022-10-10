@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export const TopOfAnything = ({ topItem }) => {
   return (
     <Link to={`${topItem.mal_id}`}>
-      <div className="px-5 py-5 text-center transition duration-300 transform bg-slate-800 rounded shadow-2xl hover:scale-105 md:shadow-xl hover:shadow-2xl">
+      <div className=" h-full px-5 py-5 text-center transition duration-300 transform bg-slate-800 rounded shadow-2xl md:hover:scale-105 md:shadow-xl hover:shadow-2xl">
         <div>
           <img
             src={topItem?.images.webp.image_url}

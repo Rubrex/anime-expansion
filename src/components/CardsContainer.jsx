@@ -47,7 +47,7 @@ export const CardsContainer = ({ top }) => {
             />
           </svg>
         </div>
-        <div className="relative grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="relative grid gap-5 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4">
           {/* Each Cart Goes Here */}
           {top.map((item) => (
             <TopOfAnything key={item.mal_id} topItem={item} />
