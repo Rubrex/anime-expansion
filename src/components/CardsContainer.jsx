@@ -1,4 +1,5 @@
 import React from "react";
+import { Outlet } from "react-router-dom";
 import { TopOfAnything } from "./TopOfAnything";
 
 export const CardsContainer = ({ top }) => {
@@ -47,11 +48,18 @@ export const CardsContainer = ({ top }) => {
             />
           </svg>
         </div>
-        <div className="relative grid gap-5 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4">
-          {/* Each Cart Goes Here */}
-          {top.map((item) => (
-            <TopOfAnything key={item.mal_id} topItem={item} />
-          ))}
+        <div className="grid lg:grid-cols-3 gap-5 ">
+          <div className="col-span-2">
+            <div className="relative grid gap-5 grid-cols-2 sm:grid-cols-2 lg:grid-cols-3">
+              {/* Each Cart Goes Here */}
+              {top.map((item) => (
+                <TopOfAnything key={item.mal_id} topItem={item} />
+              ))}
+            </div>
+          </div>
+          <div>
+            <Outlet />
+          </div>
         </div>
       </div>
     </div>

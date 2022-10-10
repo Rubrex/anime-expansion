@@ -1,4 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
+import CardDetails from "../components/CardDetails";
 import ErrorPage from "../components/ErrorPage";
 import Home from "../components/Home";
 import TopAnime from "../components/TopAnime";
@@ -19,7 +20,16 @@ export const router = createBrowserRouter([
         path: "/topAnime",
         element: <TopAnime></TopAnime>,
         loader: async () => fetch("https://api.jikan.moe/v4/top/anime"),
+        children: [
+          {
+            path: ":id",
+            element: <CardDetails />,
+            loader: async ({ params }) =>
+              fetch(`https://api.jikan.moe/v4/anime/${params.id}`),
+          },
+        ],
       },
+
       {
         path: "/topManga",
         element: <TopManga></TopManga>,
